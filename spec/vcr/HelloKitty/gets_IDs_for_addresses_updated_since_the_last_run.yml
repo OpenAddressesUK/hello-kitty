@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://alpha.openaddressesuk.org/addresses.json?street=greenfinch%20way&town=Horsham
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.6.0.1, ruby 2.2.0 (2014-12-25))
+      Accept:
+      - "*/*"
+      Date:
+      - Fri, 06 Mar 2015 14:41:21 GMT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - close
+      Date:
+      - Fri, 06 Mar 2015 14:41:22 GMT
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Total:
+      - '2'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"77536e5e729a8027c21e9fe88c97a099"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dce0986d-2eed-4455-803b-76fc7e649057
+      X-Runtime:
+      - '0.758152'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"addresses":[{"url":"https://alpha.openaddressesuk.org/addresses/5eImTD","sao":null,"pao":"32","street":{"name":{"en":["GREENFINCH
+        WAY"],"cy":[]},"url":"https://alpha.openaddressesuk.org/streets/Bm8Yfd"},"locality":{"name":{"en":[null],"cy":[]},"url":null},"town":{"name":{"en":["HORSHAM"],"cy":[]},"url":"https://alpha.openaddressesuk.org/towns/qsd3UP"},"postcode":{"name":"RH12
+        5HB","geo":{"latitude":51.08733207651451,"longitude":-0.32301085462043044},"url":"https://alpha.openaddressesuk.org/postcodes/3vRoKp"}},{"url":"https://alpha.openaddressesuk.org/addresses/5GZNIf","sao":null,"pao":"14","street":{"name":{"en":["GREENFINCH
+        WAY"],"cy":[]},"url":"https://alpha.openaddressesuk.org/streets/Bm8Yfd"},"locality":{"name":{"en":[null],"cy":[]},"url":null},"town":{"name":{"en":["HORSHAM"],"cy":[]},"url":"https://alpha.openaddressesuk.org/towns/qsd3UP"},"postcode":{"name":"RH12
+        5HB","geo":{"latitude":51.08733207651451,"longitude":-0.32301085462043044},"url":"https://alpha.openaddressesuk.org/postcodes/3vRoKp"}}]}'
+    http_version: 
+  recorded_at: Fri, 06 Mar 2015 14:41:27 GMT
+recorded_with: VCR 2.9.3

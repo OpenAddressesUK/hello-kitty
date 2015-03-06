@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://jess.openaddressesuk.org/infer
+    body:
+      encoding: UTF-8
+      string: token=rYwoGk
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.6.0.1, ruby 2.1.4 (2014-10-27))
+      Accept:
+      - "*/*"
+      Date:
+      - Fri, 06 Mar 2015 14:50:39 GMT
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 06 Mar 2015 14:50:54 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1e06f7191dc0cd1aaeb0ed06cbf0ad5e1425653439; expires=Sat, 05-Mar-16
+        14:50:39 GMT; path=/; domain=.openaddressesuk.org; HttpOnly
+      Status:
+      - 200 OK
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 1c2edfcfcff30b81-LHR
+    body:
+      encoding: UTF-8
+      string: '{"addresses":{"inferred":[{"saon":null,"paon":30,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":31,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":32,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":33,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":34,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":35,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":36,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":37,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":38,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":39,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":40,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":41,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":42,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":43,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":44,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":45,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":46,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":47,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":48,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":49,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":50,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":51,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":52,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":53,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":54,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":55,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":56,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":57,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":58,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":59,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":60,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":61,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":62,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"},{"saon":null,"paon":63,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST"}],"existing":[{"saon":null,"paon":29,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST","url":"http://alpha.openaddressesuk.org/address/rYwoGk"},{"saon":null,"paon":29,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST","url":"http://alpha.openaddressesuk.org/address/rYwoGk"},{"saon":"ARANDALE","paon":64,"street":"HERITAGE
+        COURT","locality":null,"town":"LICHFIELD","postcode":"WS14 9ST","url":"http://alpha.openaddressesuk.org/address/NHorFw"}]},"provenance":{"activity":{"executed_at":"2015-03-06T14:50:53.443+00:00","processing_scripts":"https://github.com/OpenAddressesUK/jess","derived_from":[{"type":"inference","inferred_from":["http://ernest.openaddressesuk.org/addresses/2813808","http://ernest.openaddressesuk.org/addresses/1032935"],"inferred_at":"2015-03-06T14:50:53.443+00:00","processing_script":"https://github.com/OpenAddressesUK/jess/blob/bf9348101d90d26c547bcd3180a1725bf7ea456d/lib/jess.rb"}]}}}'
+    http_version: 
+  recorded_at: Fri, 06 Mar 2015 14:50:54 GMT
+recorded_with: VCR 2.9.3

@@ -15,4 +15,15 @@ class HelloKitty
 
     tokens
   end
+  
+  def self.infer(token)
+    response = HTTPClient.new.post JESS, "token=#{token}"
+    results = JSON.parse response.content
+    results["addresses"]["inferred"].map do |x|
+      address = x.dup
+      address['provenance'] = results['provenance']
+      address
+    end
+  end
+  
 end

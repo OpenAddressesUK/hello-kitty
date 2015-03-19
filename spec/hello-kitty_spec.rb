@@ -3,10 +3,12 @@ require 'spec_helper'
 describe HelloKitty do
   
   it 'gets IDs for addresses updated since the last run', :vcr do
-    expect(HelloKitty.updates_since Time.now - 3600).to eq [
-      '5eImTD',
-      '5GZNIf'
-    ]
+    Timecop.freeze(2015,3,19,11,24) do
+      tokens = HelloKitty.updates_since Time.now - 1
+      expect(tokens.count).to eq 30
+      expect(tokens.first).to eq "2nZkzQ"
+      expect(tokens.last).to eq "CvcUkx"
+    end
   end
   
   it 'parses inference results for token', :vcr do

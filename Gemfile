@@ -8,4 +8,5 @@ group :test, :development do
   gem 'rspec'
   gem 'vcr'
   gem 'webmock'
+  gem 'timecop'
 end

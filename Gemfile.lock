@@ -85,6 +85,7 @@ GEM
     sqlite_magic (0.0.3)
       sqlite3
     thread_safe (0.3.4)
+    timecop (0.7.3)
     turbotlib (0.0.8)
       scraperwiki (= 3.0.2)
     tzinfo (1.2.2)
@@ -100,6 +101,7 @@ PLATFORMS
 DEPENDENCIES
   openc-schema!
   rspec
+  timecop
   turbot!
   turbot-api!
   turbot-runner!

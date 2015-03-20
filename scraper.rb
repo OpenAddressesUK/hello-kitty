@@ -1,6 +1,8 @@
 require 'json'
 require 'turbotlib'
-require './hello_kitty'
+
+$:.unshift File.dirname(__FILE__)
+require 'hello_kitty'
 
 Turbotlib.log("Starting run...")
 

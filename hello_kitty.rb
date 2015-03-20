@@ -7,11 +7,11 @@ class HelloKitty
 #  SOURCE = 'https://alpha.openaddressesuk.org/'
   SOURCE = 'https://alpha.openaddressesuk.org/addresses.json?'
 
-  def self.updates_since interval
-    tokens = []
+  def self.updates_since interval, &block
     total = nil
+    count = 0
     page = 1
-    while total.nil? || tokens.length < total
+    while total.nil? || count < total
       url = SOURCE+"page=#{page}&updated_since=#{interval.xmlschema}"
       response = HTTPClient.new.get url
       # Set total if first run through
@@ -19,10 +19,13 @@ class HelloKitty
         total = (response.header['X-Total-Count'] + response.header['Total']).first.to_i
       end
       j = JSON.parse(response.content)
-      tokens += j['addresses'].map { |p| p['url'].split('/').last }
+      tokens = j['addresses'].map { |p| p['url'].split('/').last }
+      tokens.each do |token|
+        block.call token
+        count += 1
+      end
       page += 1
     end
-    tokens
   end
   
   def self.infer(token)

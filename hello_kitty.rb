@@ -36,6 +36,9 @@ class HelloKitty
       address['provenance'] = results['provenance']
       address
     end
+  rescue
+    $stderr.puts "Jess exploded with token=#{token}"
+    []
   end
   
 end

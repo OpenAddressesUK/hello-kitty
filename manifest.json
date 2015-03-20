@@ -5,7 +5,8 @@
   "language": "ruby",
   "data_type": "address",
   "files": [
-    "scraper.rb"
+    "scraper.rb",
+    "hello_kitty.rb"
   ],
   "frequency": "daily",
   "publisher": {

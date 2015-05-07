@@ -32,5 +32,12 @@ describe HelloKitty do
     expect(results[0]['provenance']['activity']["derived_from"][0]["type"]).to eq "inference"
   end
 
+  it 'skips over inferred addresses' do
+    stub_request(:post, 'http://jess.openaddressesuk.org/infer').
+                to_return(status: 400)
+
+    expect { HelloKitty.infer("rYwoGk") }.to output("Address rYwoGk is already inferred\n").to_stderr
+  end
+
 
 end

@@ -6,7 +6,7 @@ require 'hello_kitty'
 
 Turbotlib.log("Starting run...")
 
-if ENV['COMPLETE_RUN']
+if ENV['COMPLETE_RUN'] == "true"
   last_run = DateTime.parse("2014-01-01")
 elsif ENV['FIRST_RUN']
   last_run = (Time.now - 259200)
